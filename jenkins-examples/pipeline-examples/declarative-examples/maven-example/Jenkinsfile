@@ -10,7 +10,7 @@ pipeline {
         stage ('Artifactory configuration') {
             steps {
                 rtServer (
-                    id: "192.168.0.17",
+                    id: "ARTIFACTORY_SERVE",
                     url: SERVER_URL,
                     credentialsId: CREDENTIALS
                 )
