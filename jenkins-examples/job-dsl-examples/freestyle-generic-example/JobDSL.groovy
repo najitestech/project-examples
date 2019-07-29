@@ -16,7 +16,7 @@ job("job-dsl-artifactory-freestyle-generic-example") {
         node / 'buildWrappers' << 'org.jfrog.hudson.generic.ArtifactoryGenericConfigurator' {
             // === Deployer ===
             deployerDetails {
-                artifactoryName SERVER_ID
+                artifactoryName 192.168.0.17
             }
             // Optional - Override deployer credentials
             //deployerCredentialsConfig {
@@ -25,7 +25,7 @@ job("job-dsl-artifactory-freestyle-generic-example") {
 
             // === Resolver ===
             resolverDetails {
-                artifactoryName SERVER_ID
+                artifactoryName 192.168.0.17
             }
             // Optional - Override resolver credentials
             //resolverCredentialsConfig {
